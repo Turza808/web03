@@ -22,6 +22,11 @@
         font-family: "ADLaM Display", serif;
       }
     </style>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/1084bc3c15.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- daisyui + tailwind cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -39,7 +44,9 @@
               "my-green": "#179800",
               "lg-top": "#FFFFFF",
               "lg-bottom": "#EFEBE3",
-              "secondary":"#EFEBE3"
+              secondary: "#EFEBE3",
+              "card-green": "#115414",
+              "card-blue": "#102861",
             },
           },
         },
@@ -47,9 +54,7 @@
     </script>
   </head>
   <body class="sora-font">
-    <header
-      class="container mx-auto bg-gradient-to-b from-lg-top to-lg-bottom"
-    >
+    <header class="container mx-auto bg-gradient-to-b from-lg-top to-lg-bottom">
       <!-- nabver start -->
       <div
         class="navbar bg-base-100 border-b-2 border-b-green-600 lg:border-none"
@@ -153,40 +158,421 @@
     </header>
     <main class="container mx-auto mt-12 lg:mt-32">
       <!-- services section -->
-      <section class=" mx-2 lg:mx-32">
-        <h3 class="text-left text-my-green font-semibold text-2xl lg:text-4xl">Services</h3>
+      <section class="mx-2 lg:mx-28">
+        <h3 class="text-left text-my-green font-semibold text-2xl lg:text-4xl">
+          Services
+        </h3>
         <!--cards container-->
         <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-3">
-            <!-- card01 -->
-             <div class="flex flex-col justify-center items-center mx-auto bg-secondary p-6 border rounded-2xl">
-                <div class="w-28 h-28 border rounded-full bg-white p-6 mb-6">
-                    <img src="c2-assets/service.png" alt="">
-                </div>
-                <h3 class="font-semibold text-2xl mb-6">24/7 Services</h3>
-                <p class="font-light text-xl text-center">Whether it's day or night, our dedicated team is ready to assist you with reliable and efficient support.</p>
-             </div>
-            <!-- card02 -->
-             <div class="flex flex-col justify-center items-center mx-auto bg-secondary p-6 border rounded-2xl">
-                <div class="w-28 h-28 border rounded-full bg-white p-6 mb-6">
-                    <img src="c2-assets/delivery.png" alt="">
-                </div>
-                <h3 class="font-semibold text-2xl mb-6">Fast Delivery</h3>
-                <p class="font-light text-xl text-center">We guarantee lightning-fast delivery, ensuring that your orders reach you in the shortest possible time.</p>
-             </div>
-            <!-- card03 -->
-             <div class="flex flex-col justify-center items-center mx-auto bg-secondary p-6 border rounded-2xl">
-                <div class="w-28 h-28 border rounded-full bg-white p-6 mb-6">
-                    <img src="c2-assets/healthy.png" alt="">
-                </div>
-                <h3 class="font-semibold text-2xl mb-6">Healthy Products</h3>
-                <p class="font-light text-xl text-center">Choose Us.Our products are free from harmful additives and packed with essential nutrients.</p>
-             </div>
+          <!-- card01 -->
+          <div
+            class="flex flex-col justify-center items-center mx-auto bg-secondary p-6 border rounded-2xl"
+          >
+            <div class="w-28 h-28 border rounded-full bg-white p-6 mb-6">
+              <img src="c2-assets/service.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-2xl mb-6">24/7 Services</h3>
+            <p class="font-light text-xl text-center">
+              Whether it's day or night, our dedicated team is ready to assist
+              you with reliable and efficient support.
+            </p>
+          </div>
+          <!-- card02 -->
+          <div
+            class="flex flex-col justify-center items-center mx-auto bg-secondary p-6 border rounded-2xl"
+          >
+            <div class="w-28 h-28 border rounded-full bg-white p-6 mb-6">
+              <img src="c2-assets/delivery.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-2xl mb-6">Fast Delivery</h3>
+            <p class="font-light text-xl text-center">
+              We guarantee lightning-fast delivery, ensuring that your orders
+              reach you in the shortest possible time.
+            </p>
+          </div>
+          <!-- card03 -->
+          <div
+            class="flex flex-col justify-center items-center mx-auto bg-secondary p-6 border rounded-2xl"
+          >
+            <div class="w-28 h-28 border rounded-full bg-white p-6 mb-6">
+              <img src="c2-assets/healthy.png" alt="" />
+            </div>
+            <h3 class="font-semibold text-2xl mb-6">Healthy Products</h3>
+            <p class="font-light text-xl text-center">
+              Choose Us.Our products are free from harmful additives and packed
+              with essential nutrients.
+            </p>
+          </div>
         </div>
       </section>
       <!-- Popular Products section -->
-       <section class="p-32 bg-secondary lg:mt-32">
-        
-       </section>
+      <section class="px-3 py-11 lg:p-32 bg-secondary mt-14 lg:mt-28">
+        <h3
+          class="text-left text-my-green font-semibold text-2xl lg:text-4xl mb-8 lg:mb-11"
+        >
+          Popular Products
+        </h3>
+        <!--card container -->
+        <div class="flex flex-col lg:flex-row lg:gap-4">
+          <!-- left card -->
+          <div
+            class="pl-px-[32px] border rounded-lg bg-gradient-to-br from-my-green to-green-100 h-[309px] lg:w-2/6"
+          >
+            <h3 class="text-white mt-7 ml-[32px] text-3xl adlam-display-font">
+              <span class="text-gray-300">30%</span> off
+            </h3>
+            <p class="ml-[32px] mt-2 text-sm">
+              Freshness Meets Savings! Get 30% OFF <br />
+              on All Vegetables – Limited Time Offer!
+            </p>
+            <button class="mt-2 btn ml-[32px] text-lg">Buy Now</button>
+            <!-- <img src="c2-assets/vegetable-offer.png" alt="" class="absolute left-[12px]"> -->
+          </div>
+          <!-- right card (grid) container -->
+          <div class="lg:w-4/6">
+            <div
+              class="grid grid-cols-2 gap-3 lg:gap-4 mt-6 lg:grid-cols-3 lg:mt-0"
+            >
+              <!-- card 01 -->
+              <div class="p-2 bg-white flex gap-2 border rounded-xl">
+                <div
+                  class="bg-secondary flex justify-center items-center border rounded-lg"
+                >
+                  <img src="c2-assets/onion.png" alt="" />
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="1.5"
+                    fill="gold"
+                    viewBox="0 0 24 24"
+                    stroke="gold"
+                    class="size-4 inline-block mr-[5px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <h4 class="inline text-xs">4.5</h4>
+                  <h3 class="font-medium text-sm mt-1">Onion 1KG</h3>
+                  <h3 class="font-medium text-[10px] mt-1">$39.99</h3>
+                </div>
+              </div>
+              <!-- card 02 tomato-->
+              <div class="p-2 bg-white flex gap-2 border rounded-xl">
+                <div
+                  class="bg-secondary flex justify-center items-center border rounded-lg"
+                >
+                  <img src="c2-assets/tomato.png" alt="" />
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="1.5"
+                    fill="gold"
+                    viewBox="0 0 24 24"
+                    stroke="gold"
+                    class="size-4 inline-block mr-[5px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <h4 class="inline text-xs">4.5</h4>
+                  <h3 class="font-medium text-sm mt-1">Tomato 500g</h3>
+                  <h3 class="font-medium text-[10px] mt-1">$39.99</h3>
+                </div>
+              </div>
+              <!-- card 03 potato-->
+              <div class="p-2 bg-white flex gap-2 border rounded-xl">
+                <div
+                  class="bg-secondary flex justify-center items-center border rounded-lg"
+                >
+                  <img src="c2-assets/potato.png" alt="" />
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="1.5"
+                    fill="gold"
+                    viewBox="0 0 24 24"
+                    stroke="gold"
+                    class="size-4 inline-block mr-[5px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <h4 class="inline text-xs">4.5</h4>
+                  <h3 class="font-medium text-sm mt-1">Potato 1KG</h3>
+                  <h3 class="font-medium text-[10px] mt-1">$39.99</h3>
+                </div>
+              </div>
+              <!-- card 04 tomato-->
+              <div class="p-2 bg-white flex gap-2 border rounded-xl">
+                <div
+                  class="bg-secondary flex justify-center items-center border rounded-lg"
+                >
+                  <img src="c2-assets/tomato.png" alt="" />
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="1.5"
+                    fill="gold"
+                    viewBox="0 0 24 24"
+                    stroke="gold"
+                    class="size-4 inline-block mr-[5px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <h4 class="inline text-xs">4.5</h4>
+                  <h3 class="font-medium text-sm mt-1">Tomato 500g</h3>
+                  <h3 class="font-medium text-[10px] mt-1">$39.99</h3>
+                </div>
+              </div>
+              <!-- card 05 onion -->
+              <div class="p-2 bg-white flex gap-2 border rounded-xl">
+                <div
+                  class="bg-secondary flex justify-center items-center border rounded-lg"
+                >
+                  <img src="c2-assets/onion.png" alt="" />
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="1.5"
+                    fill="gold"
+                    viewBox="0 0 24 24"
+                    stroke="gold"
+                    class="size-4 inline-block mr-[5px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <h4 class="inline text-xs">4.5</h4>
+                  <h3 class="font-medium text-sm mt-1">Onion 1KG</h3>
+                  <h3 class="font-medium text-[10px] mt-1">$39.99</h3>
+                </div>
+              </div>
+              <!-- card 06 tomato-->
+              <div class="p-2 bg-white flex gap-2 border rounded-xl">
+                <div
+                  class="bg-secondary flex justify-center items-center border rounded-lg"
+                >
+                  <img src="c2-assets/tomato.png" alt="" />
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="1.5"
+                    fill="gold"
+                    viewBox="0 0 24 24"
+                    stroke="gold"
+                    class="size-4 inline-block mr-[5px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <h4 class="inline text-xs">4.5</h4>
+                  <h3 class="font-medium text-sm mt-1">Tomato 500g</h3>
+                  <h3 class="font-medium text-[10px] mt-1">$39.99</h3>
+                </div>
+              </div>
+              <!-- card 07 onion -->
+              <div class="p-2 bg-white flex gap-2 border rounded-xl">
+                <div
+                  class="bg-secondary flex justify-center items-center border rounded-lg"
+                >
+                  <img src="c2-assets/onion.png" alt="" />
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="1.5"
+                    fill="gold"
+                    viewBox="0 0 24 24"
+                    stroke="gold"
+                    class="size-4 inline-block mr-[5px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <h4 class="inline text-xs">4.5</h4>
+                  <h3 class="font-medium text-sm mt-1">Onion 1KG</h3>
+                  <h3 class="font-medium text-[10px] mt-1">$39.99</h3>
+                </div>
+              </div>
+              <!-- card 08 potato-->
+              <div class="p-2 bg-white flex gap-2 border rounded-xl">
+                <div
+                  class="bg-secondary flex justify-center items-center border rounded-lg"
+                >
+                  <img src="c2-assets/potato.png" alt="" />
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="1.5"
+                    fill="gold"
+                    viewBox="0 0 24 24"
+                    stroke="gold"
+                    class="size-4 inline-block mr-[5px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <h4 class="inline text-xs">4.5</h4>
+                  <h3 class="font-medium text-sm mt-1">Potato 1KG</h3>
+                  <h3 class="font-medium text-[10px] mt-1">$39.99</h3>
+                </div>
+              </div>
+              <!-- card 09 potato-->
+              <div class="p-2 bg-white hidden lg:flex gap-2 border rounded-xl">
+                <div
+                  class="bg-secondary flex justify-center items-center border rounded-lg"
+                >
+                  <img src="c2-assets/potato.png" alt="" />
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="1.5"
+                    fill="gold"
+                    viewBox="0 0 24 24"
+                    stroke="gold"
+                    class="size-4 inline-block mr-[5px]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                    />
+                  </svg>
+                  <h4 class="inline text-xs">4.5</h4>
+                  <h3 class="font-medium text-sm mt-1">Potato 1KG</h3>
+                  <h3 class="font-medium text-[10px] mt-1">$39.99</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Arrival & Offers section -->
+      <section class="mt-12 lg:mt-36">
+        <h3
+          class="px-3 lg:px-32 text-left text-my-green font-semibold text-2xl lg:text-4xl mb-8 lg:mb-11"
+        >
+          Arrival & Offers
+        </h3>
+        <!-- card container -->
+        <div class="lg:px-32 flex flex-col lg:flex-row gap-5">
+          <!-- first card of this section -->
+          <div
+            class="bg-card-green border rounded-3xl flex p-5 h-[330px] gap-3 lg:w-7/12"
+          >
+            <!-- content -->
+            <div>
+              <img src="c2-assets/dawat-logo.png" alt="" class="mt-3" />
+              <div class="btn mt-7 text-2xl px-5 font-normal absolute">
+                Cook Exotic Dishes
+              </div>
+              <h3 class="text-3xl text-white mt-28">
+                UP to <span class="font-bold">20% OFF</span>
+              </h3>
+            </div>
+            <!-- images -->
+            <div>
+              <!-- <img src="c2-assets/dawat-mock-up.png" alt="" class="" /> -->
+            </div>
+            <!-- second card of the section -->
+          </div>
+          <div
+            class="bg-card-green border rounded-3xl flex p-5 h-[330px] gap-3 mx-3 lg:w-5/12"
+          >
+            <!-- content -->
+            <div>
+              <img src="c2-assets/india-gate-logo.png" alt="" class="mt-3" />
+              <div class="btn mt-4 text-2xl px-5 font-normal absolute">
+                World’s No.1 Rice
+              </div>
+              <h3 class="text-3xl text-white mt-20">
+                UP to <span class="font-bold">40% OFF</span>
+              </h3>
+            </div>
+            <!-- images -->
+            <div>
+              <img src="c2-assets/india-gate-mock-up.png" alt="" class="" />
+            </div>
+          </div>
+      </section>
+      <!-- fluid section -->
+      <section class="">
+        <div class="bg-secondary border rounded-2xl mx-4 lg:mx-32 lg:flex lg:justify-center lg:items-center lg:gap-20 py-14">
+          <div class="flex justify-center items-center mb-6">
+            <img src="c2-assets/vegetable-busket.png" alt="" />
+          </div>
+          <div class="flex flex-col items-center gap-2 lg:items-start">
+            <h3 class="font-bold text-2xl text-my-green mb-3 lg:text-black lg:text-3xl ">Get Grocery News!</h3>
+            <p class="text-center mb-5 lg:text-left">Exclusive training tips, ticks, product <br> deals and more.</p>
+            <input type="email" name="" id="" placeholder="Enter email..." class="h-11 lg:h-16  w-72 lg:w-96 p-2 border rounded-md">
+            <br>
+            <button
+              class="bg-my-green px-7 py-3 border border-green-600 rounded-lg text-sm text-white"
+            >
+            Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="container mx-auto  bg-my-green pt-96 px-3 lg:pb-36">
+        
+      <div class="lg:flex lg:justify-between lg:px-32">
+        <div>
+          <img src="c2-assets/logo-footer.png" alt="" class="w-1/3" />
+          <p class="text-white mt-3 lg:w-[350px]">
+            Discover a world of farm-fresh vegetables and essential kitchen
+            staples handpicked for your healthy lifestyle!
+          </p>
+        </div>
+        <ul class="mt-7 lg:mt-0">
+          <li class="mb-5"><a href="" class="text-white">Product</a></li>
+          <li class="mb-5"><a href="" class="text-white">Servivces</a></li>
+          <li class="mb-5"><a href="" class="text-white">Contact Us</a></li>
+        </ul>
+        <div class="lg:mt-7">
+          <p class="text-sm text-white mt-8">Follow Us</p>
+          <div class="mt-3 pb-9 flex gap-7">
+            <i class="fa-brands fa-facebook text-3xl"></i>
+            <i class="fa-brands fa-instagram text-3xl"></i>
+            <i class="fa-brands fa-linkedin text-3xl"></i>
+            <i class="fa-brands fa-youtube text-3xl"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
